@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="min-w-screen absolute overflow-hidden">
       <Header />
-      {/* <Page1 />
+      <Page1 />
       <Page3 />
-      <Page2 /> */}
+      <Page2 />
       <Info />
     </div>
   );
