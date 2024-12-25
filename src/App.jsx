@@ -8,13 +8,13 @@ import LocomotiveScroll from "locomotive-scroll";
 import Info from "./Pages/Info";
 
 function App() {
-  const locomotiveScroll = new LocomotiveScroll();
+  // const locomotiveScroll = new LocomotiveScroll();
   return (
-    <div className="min-w-screen absolute overflow-hidden">
+    <div className="min-w-screen  overflow-hidden">
       <Header />
-      <Page1 />
-      <Page3 />
+      {/* <Page1 />
       <Page2 />
+      <Page3 /> */}
       <Info />
     </div>
   );
