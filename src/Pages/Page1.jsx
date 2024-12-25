@@ -3,6 +3,7 @@ import gsap from "gsap";
 import React, { useRef, useState } from "react";
 import TiltText from "../Components/TiltText";
 import "./sample.css";
+import selfi from "../../public/images/img12.jpeg";
 
 const Page1 = () => {
   const [xVal, setXVal] = useState(0);
@@ -44,18 +45,19 @@ const Page1 = () => {
       data-scroll-section
       onMouseMove={(e) => movingMouse(e)}
       className="h-screen z-0 overflow-hidden
-     p-6 bg-black"
+     p-6 bg-black flex"
     >
       <div
         className="h-full w-full py-5 px-10 z-0
-       rounded-3xl bg-cover bg-[#121212]"
+       rounded-3xl bg-cover
+         flex"
         // style={{ backgroundImage: `url(${img1})` }}
+        // bg-[#121212]
         id="page1-in"
       >
-        {/* <img src={Logo} className="h-[100px] w-[120px]" alt="" /> */}
-
-        <TiltText abc={tiltRef} />
+        <TiltText className="" abc={tiltRef} />
       </div>
+      <img src={selfi} className="h-[800px] w-[800px]" alt="" />
     </div>
   );
 };
