@@ -2,12 +2,8 @@ import React from "react";
 import testing from "../../public/images/testing2.jpg";
 import image from "../../public/images/img12.jpeg";
 import LongCard from "../Components/Card/LongCard";
-import font9 from "../assets/fonts/font9.woff2";
-import font10 from "../assets/fonts/font10.woff2";
 import font11 from "../assets/fonts/font11.woff2";
-import font12 from "../assets/fonts/font12.woff2";
-import font7 from "../assets/fonts/font7.woff2";
-import "./info.css";
+import "./Information.css";
 const Info = () => {
   return (
     <div

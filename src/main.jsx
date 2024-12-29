@@ -3,10 +3,10 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Page1 from "./Pages/Page1";
-import Page2 from "./Pages/Page2";
-import Page3 from "./Pages/Page3";
-import Info from "./Pages/Info";
+import Home from "./Pages/Home";
+import CardsPage from "./Pages/CardsPage";
+import Marquees from "./Pages/Marquees";
+import Information from "./Pages/Information";
 
 const router = createBrowserRouter([
   {
@@ -15,15 +15,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: [<Page1 />, <Page3 />, <Page2 />],
-      },
-      {
-        path: "/page2",
-        element: <Page2 />,
+        element: [<Home />, <Marquees />, <CardsPage />],
       },
       {
         path: "info",
-        element: <Info />,
+        element: <Information />,
       },
     ],
   },

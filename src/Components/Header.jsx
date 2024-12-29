@@ -1,7 +1,7 @@
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
-import Info from "../Pages/Info";
-import Page1 from "../Pages/Page1";
+import Info from "../Pages/Information";
+import Page1 from "../Pages/Home";
 import { Link } from "react-router-dom";
 
 const Header = () => {
