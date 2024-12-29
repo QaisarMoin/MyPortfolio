@@ -5,9 +5,8 @@
 }
 
 .Card_hoverAnimation:hover {
-  top: 50px;
+  top: 40px;
 }
-
 .CardImage_hoverAnimation {
   transition: all 0.3s ease-in-out;
   z-index: 0px;
@@ -23,7 +22,7 @@
 }
 
 .glow_card {
-  box-shadow: 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 50px #ffffff;
+  box-shadow: 0 0 0px #8b90a5, 0 0 0px #8b90a5, 0 0 30px #8b90a5;
   transition: all 0.3s ease-in-out;
 }
 
@@ -48,9 +47,5 @@
 
 .middle_div:hover {
   background: #0091ff;
-  background: linear-gradient(
-    180deg,
-    rgba(32, 130, 204, 0.509) 0%,
-    rgba(31, 79, 115, 0) 100%
-  );
+  background: linear-gradient(180deg, #9b9fac60 0%, rgba(31, 79, 115, 0) 100%);
 }

@@ -3,15 +3,9 @@
   z-index: 0px;
 }
 
-#page2-in {
+/* #page2-in {
   position: relative;
   perspective: 1800px;
-}
-
-/* .heading {
-  text-shadow: 0 0 2px #fb923c, 0 0 0px #fb923c, 0 0 0px #fb923c,
-    0 0 0px #fb923c, 0 0 10px #fb923c;
-  color: black;
 } */
 
 .container {
@@ -31,12 +25,11 @@
 .page3_Marquee {
   rotate: -3deg;
   transform-origin: 0%;
-  z-index: 1000px;
+  z-index: 5px;
 }
 
 .page3_shiningBorder {
   box-shadow: 0 0 30px #fff, 0 0 0px #fff, 0 0 0px #fff;
-  /* box-shadow: 10px -5px 9px rgba(255, 255, 255, 0.684);  */
 }
 
 .page2_bgGradient {

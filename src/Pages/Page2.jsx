@@ -27,13 +27,13 @@ const Page2 = () => {
   // Middle Animation
   useGSAP(function () {
     gsap.from(".rotate", {
-      transform: "rotateX(-80deg)",
+      transform: "rotateX(-100deg)",
       opacity: 0,
       duration: 2,
       stagger: 1,
       scrollTrigger: {
         trigger: ".rotate",
-        scrub: 1,
+        scrub: 2,
         start: "top 70%",
         end: "bottom 60%",
       },
@@ -59,7 +59,7 @@ const Page2 = () => {
   return (
     <div
       id="page2-in"
-      className="text-white py-10
+      className="text-white py-10 relative
      bg-[#000] text-center mt-10 "
     >
       {/* <div className="heading">

@@ -1,13 +1,13 @@
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
+import Info from "../Pages/Info";
+import Page1 from "../Pages/Page1";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="relative min-screen">
-      <div
-        className="fixed top-5 z-10 overflow-hidden px-10 py-5
-      min-w-[100vw] flex justify-between items-center text-white "
-      >
+      <div className="fixed top-5 z-10 overflow-hidden px-10 py-5 bg-transparent min-w-[100vw] flex justify-between items-center text-white ">
         {/* Left side of Header */}
         <div
           className=" min-w-1/3 flex relative
@@ -18,23 +18,25 @@ const Header = () => {
 
         {/* Middel part of Header */}
         <div
-          className="Header_wwe1 border-white border-2 flex items-center 
+          className="Header_wwe1 border-[#8b90a5] border-[1px] flex items-center 
         justify-center rounded-full makeItLarge font-[font5] gap-4"
         >
-          <button
+          <Link
+            to="/"
             className=" min-w-[50px] h-full my-3 glowTextMiddel
            max-w-fit rounded-full
          hover:text-yellow-100 "
           >
             Work
-          </button>
-          <button
+          </Link>
+          <Link
+            to="/info"
             className="min-w-[50px] h-full my-3 glowTextMiddel
            max-w-fit rounded-full
          hover:text-yellow-100 "
           >
             InFo
-          </button>
+          </Link>
         </div>
 
         {/* Right side of Header */}
@@ -43,7 +45,10 @@ const Header = () => {
        flex justify-end"
         >
           <button className="flex items-center glowText">
-            Linkedin <MdArrowOutward />
+            <a href="https://www.linkedin.com/in/qaisar-moin-884918253/">
+              Linkedin{" "}
+            </a>{" "}
+            <MdArrowOutward />
           </button>
           <button className="flex items-center glowText">
             Resume <MdArrowOutward />

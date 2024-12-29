@@ -55,7 +55,7 @@ const Page1 = () => {
         // bg-[#121212]
         id="page1-in"
       >
-        <TiltText className="" abc={tiltRef} />
+        <TiltText className="" refrence={tiltRef} />
       </div>
       <img src={selfi} className="h-[800px] w-[800px]" alt="" />
     </div>

@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React from "react";
 import "./Card.css";
 
@@ -10,14 +9,17 @@ const Card = ({ path, name, description, animation }) => {
     >
       <div
         className="page2_bgGradient_top md:w-[75vw]
-         flex justify-center items-center 
-     rounded-2xl h-[700px]  overflow-hidden self-center glow_card "
+         flex justify-center items-center border-[#8b90a5] border-[1px]
+     rounded-3xl h-[700px]  overflow-hidden self-center glow_card "
       >
-        <div className="page2_bgGradient md:w-[74vw]  h-[690px] rounded-2xl overflow-hidden ">
+        <div
+          className="page2_bgGradient md:w-[74vw]  h-[690px]
+         rounded-[20px] overflow-hidden "
+        >
           {/* Middle Div Starts from here  ---------------------- */}
           <div
             className="middle_div md:w-[75vw] 
-     rounded-2xl h-[700px]  overflow-hidden self-center "
+     rounded-3xl h-[700px]  overflow-hidden self-center "
           >
             {/* Card Naming  ------------------------- */}
             <div className="w-[95%] text-left">
