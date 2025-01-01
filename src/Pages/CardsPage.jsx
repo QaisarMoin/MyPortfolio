@@ -18,8 +18,8 @@ const Page2 = () => {
       scrollTrigger: {
         trigger: ".slideFrom_Left",
         scrub: 2,
-        start: "top 25%",
-        end: "top 40%",
+        start: "top 50%",
+        end: "top 35%",
       },
     });
   });
@@ -35,7 +35,8 @@ const Page2 = () => {
         trigger: ".rotate",
         scrub: 2,
         start: "top 70%",
-        end: "bottom 60%",
+        end: "bottom 90%",
+        // markers: true,
       },
     });
   });
@@ -50,8 +51,8 @@ const Page2 = () => {
       scrollTrigger: {
         trigger: ".slideFrom_Right",
         scrub: 2,
-        start: "top 25%",
-        end: "top 40%",
+        start: "top 50%",
+        end: "top 35%",
       },
     });
   });
@@ -98,13 +99,17 @@ const Page2 = () => {
         </h1>
       </div> */}
 
-      <div className="mt-20">
+      <div
+        className="mt-20 flex items-center
+     justify-center flex-col min-w-screen "
+      >
         <Card
           path={"../../../public/images/eco.png"}
           name="E-Commerce"
           description="A Seamless MERN Stack E-commerce Experience!"
           animation="slideFrom_Left"
         />
+
         <Card
           path={"../../../public/images/eco.png"}
           name="E-Commerce"

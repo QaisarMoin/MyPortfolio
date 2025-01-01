@@ -4,6 +4,7 @@ import image from "../../public/images/img12.jpeg";
 import LongCard from "../Components/Card/LongCard";
 import font11 from "../assets/fonts/font11.woff2";
 import "./Information.css";
+
 const Info = () => {
   return (
     <div

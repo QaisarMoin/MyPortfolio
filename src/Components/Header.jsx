@@ -19,7 +19,7 @@ const Header = () => {
         {/* Middel part of Header */}
         <div
           className="Header_wwe1 border-[#8b90a5] border-[1px] flex items-center 
-        justify-center rounded-full makeItLarge font-[font5] gap-4"
+        justify-center rounded-full makeItLarge font-[font5] gap-4 md:ml-[70px]"
         >
           <Link
             to="/"

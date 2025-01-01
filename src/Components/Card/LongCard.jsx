@@ -10,7 +10,7 @@ const LongCard = ({ imageAddress }) => {
       {/* insider Card */}
       <div
         className="max-w-[96%] min-w-[96%] max-h-[97%] min-h-[97%]
-               overflow-hidden object-cover 
+               overflow-hidden object-cover border-[1px] border-[#ffffff2e]
              flex justify-center items-center rounded-xl"
       >
         <img

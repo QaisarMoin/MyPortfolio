@@ -7,6 +7,7 @@ import Home from "./Pages/Home";
 import CardsPage from "./Pages/CardsPage";
 import Marquees from "./Pages/Marquees";
 import Information from "./Pages/Information";
+import ProjectDetails from "./Pages/ProjectDetails";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,10 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: [<Home />, <Marquees />, <CardsPage />],
+        element: [
+          // <Home />, <Marquees />, <CardsPage />,
+          <ProjectDetails />,
+        ],
       },
       {
         path: "info",

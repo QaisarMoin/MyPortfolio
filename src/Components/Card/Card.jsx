@@ -5,11 +5,11 @@ const Card = ({ path, name, description, animation }) => {
   return (
     <div
       className={`min-w-screen mt-32 flex 
-     justify-center place-items-end ${animation} `}
+     justify-center place-items-end ${animation}  `}
     >
       <div
         className="page2_bgGradient_top md:w-[75vw]
-         flex justify-center items-center border-[#8b90a5] border-[1px]
+         flex justify-center items-center border-[#8b90a5] 
      rounded-3xl h-[700px]  overflow-hidden self-center glow_card "
       >
         <div

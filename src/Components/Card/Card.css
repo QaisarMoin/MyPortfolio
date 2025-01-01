@@ -42,7 +42,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: all 10.3s ease-in-out;
+  transition: all 1.3s ease-in-out;
 }
 
 .middle_div:hover {

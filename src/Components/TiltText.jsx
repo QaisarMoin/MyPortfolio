@@ -6,8 +6,8 @@ const TiltText = ({ refrence }) => {
   return (
     <div
       ref={refrence}
-      className="uppercase ml-10 mt-44 w-fit
-       h-fit p-5 rounded-2xl  "
+      className="uppercase ml-10 mt-44 min-w-fit
+       min-h-fit p-5 rounded-2xl text-nowrap "
     >
       <h1
         className="font-[font1] text-[8vw]

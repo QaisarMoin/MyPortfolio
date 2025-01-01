@@ -21,10 +21,10 @@ function App() {
   return (
     <div className="min-w-screen  overflow-hidden">
       <div className="min-w-[100%] overflow-hidden">
-        <div
+        {/* <div
           className="cursor bg-white fixed w-[20px]
        h-[20px] rounded-full "
-        ></div>
+        ></div> */}
         <Header />
         <Outlet />
       </div>

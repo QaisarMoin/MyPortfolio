@@ -45,7 +45,7 @@ const Page1 = () => {
       data-scroll-section
       onMouseMove={(e) => movingMouse(e)}
       className="h-screen z-0 overflow-hidden
-     p-6 bg-black flex"
+     py-6 px-20 bg-black flex"
     >
       <div
         className="h-full w-full py-5 px-10 z-0
