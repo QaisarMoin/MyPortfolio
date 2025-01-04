@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 
 function App() {
-  // const locomotiveScroll = new LocomotiveScroll();
+  const locomotiveScroll = new LocomotiveScroll();
 
   // useEffect(() => {
   //   const cursor = document.querySelector(".cursor");
@@ -19,15 +19,9 @@ function App() {
   // }, []);
 
   return (
-    <div className="min-w-screen  overflow-hidden">
-      <div className="min-w-[100%] overflow-hidden">
-        {/* <div
-          className="cursor bg-white fixed w-[20px]
-       h-[20px] rounded-full "
-        ></div> */}
-        <Header />
-        <Outlet />
-      </div>
+    <div className="absolute min-w-[100vw] min-h-[100vh] overflow-hidden">
+      <Header />
+      <Outlet />
     </div>
   );
 }

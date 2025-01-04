@@ -3,7 +3,7 @@ import gsap from "gsap";
 import React, { useRef, useState } from "react";
 import TiltText from "../Components/TiltText";
 import "./sample.css";
-import selfi from "../../public/images/img12.jpeg";
+import selfi from "../assets/images/img12.jpeg";
 
 const Page1 = () => {
   const [xVal, setXVal] = useState(0);
@@ -44,20 +44,24 @@ const Page1 = () => {
       data-scroll-speed="-.3"
       data-scroll-section
       onMouseMove={(e) => movingMouse(e)}
-      className="h-screen z-0 overflow-hidden
-     py-6 px-20 bg-black flex"
+      className="h-fit overflow-hidden w-screen md:mt-10 md:py-6 md:px-0 px-20 mt-20
+        min-w-[400px] bg-[#000000] flex justify-center items-center relative 
+         md:gap-0 md:min-w-[100vw] "
     >
       <div
-        className="h-full w-full py-5 px-10 z-0
-       rounded-3xl bg-cover
-         flex"
-        // style={{ backgroundImage: `url(${img1})` }}
-        // bg-[#121212]
+        className="md:max-h-[800px] md:min-h-[500px] md:max-w-[600px] md:min-w-[400px]
+       w-[50vw]  md:w-[600px]  flex items-center 
+          "
         id="page1-in"
       >
-        <TiltText className="" refrence={tiltRef} />
+        <TiltText refrence={tiltRef} />
       </div>
-      <img src={selfi} className="h-[800px] w-[800px]" alt="" />
+      <img
+        src={selfi}
+        className="md:max-h-[800px] md:mr-[-150px] md:min-h-[500px]
+       w-[50vw] md:max-w-[600px] md:min-w-[400px] min-w-[200px]"
+        alt=""
+      />
     </div>
   );
 };

@@ -32,3 +32,50 @@
 .makeItLarge:hover {
   width: 250px;
 }
+
+.Header_small_device {
+  background: transparent;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.175);
+}
+
+.Header_small_device_inside {
+  background: rgba(133, 133, 133, 0.593);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.175);
+}
+
+.Header_small_device_dropdown {
+  transition: all 0.5s ease-in-out;
+  /* position: relative; */
+  border: 2px solid green;
+}
+
+/* .Header_small_device_dropdown::after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  right: 200px;
+  width: 200px;
+  position: relative;
+  height: 100px;
+  background: red;
+  bottom: 100px;
+} */
+
+.qaisar {
+  --r: 40px; /* radius */
+
+  width: 300px;
+  aspect-ratio: 1.5;
+  background: #519548;
+  border-radius: var(--r) 0 / calc(2 * var(--r)) 0;
+  padding-block: var(--r);
+  --_m: #0000 100%, #000 calc(100% + 1px);
+  mask: conic-gradient(#000 0 0) content-box,
+    radial-gradient(var(--r) at 0 0, var(--_m)) 100% 0 no-repeat,
+    radial-gradient(var(--r) at 0 0, var(--_m)) 100% 0 no-repeat;
+  mask-size: var(--r) var(--r);
+}

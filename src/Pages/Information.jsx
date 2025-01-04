@@ -1,6 +1,6 @@
 import React from "react";
-import testing from "../../public/images/testing2.jpg";
-import image from "../../public/images/img12.jpeg";
+import testing from "../assets/images/testing2.jpg";
+import image from "../assets/images/img12.jpeg";
 import LongCard from "../Components/Card/LongCard";
 import font11 from "../assets/fonts/font11.woff2";
 import "./Information.css";

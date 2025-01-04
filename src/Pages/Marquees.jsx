@@ -19,7 +19,7 @@ const Page3 = () => {
       data-scroll-speed=".1"
       data-scroll-section
       className="mt-7 bg-black py-24 relative border-b-2
-       rounded-[30%] page3_shiningBorder"
+       rounded-[30%] page3_shiningBorder min-w-[100vw] max-w-[100vw] h-fit"
     >
       {/* First Marquee */}
       <div

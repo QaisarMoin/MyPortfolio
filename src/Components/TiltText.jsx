@@ -6,37 +6,45 @@ const TiltText = ({ refrence }) => {
   return (
     <div
       ref={refrence}
-      className="uppercase ml-10 mt-44 min-w-fit
-       min-h-fit p-5 rounded-2xl text-nowrap "
+      className="uppercase ml-5  md:ml-0 flex flex-col md:pl-5
+       items-start justify-center relative 
+       h-fit  rounded-2xl text-nowrap  min-w-[200px]
+       w-[50vw] md:max-h-[800px] md:min-h-[500px] md:max-w-[600px] md:min-w-[400px]  "
     >
       <h1
-        className="font-[font1] text-[8vw]
-         mt-10 leading-[2vw] w-fit h-fit"
+        className="font-[font1] text-[25px]
+         md:leading-[50px] leading-[25px] flex items-center justify-center"
       >
-        <span className="text-white font-[font2] text-[5vw]">Hi, I’m </span>
+        <span
+          className="text-white font-[font2]
+         md:text-[60px] "
+        >
+          Hi, I’m{" "}
+        </span>
         <motion.h1
           initial={{ x: "100vw" }}
           animate={{ x: "55%" }}
           transition={({ delay: 0.5 }, { duration: 0.8 })}
-          className="text-[#e0fd60] font-[font1] flex"
+          className="text-[#e0fd60] font-[font1] md:text-[100px] h-fit
+          -ml-14 text-[30px] flex md:ml-[-200px]"
         >
           Mohd Qaisar Moin
         </motion.h1>
       </h1>
 
       <h1
-        className="font-[font2] text-[5vw]
-       leading-[10vw] w-fit h-fit text-black"
+        className="font-[font2] text-[5vw] md:text-[60px]
+       text-black"
       >
-        <span className="bg-orange-400 font-[font4] font-bold rounded-lg">
+        <span className="bg-orange-400 font-[font4] font-bold rounded-sm md:rounded-lg">
           a
         </span>
-        <span className="text-white text-[6vw]">Mern stack</span>
+        <span className="text-white text-[6vw] md:text-[60px]">Mern stack</span>
       </h1>
 
       <div
-        className="font-[font2] text-[6vw]
-       leading-[5vw] w-fit h-fit flex"
+        className="font-[font2] text-[6vw] md:text-[60px]
+       md:leading-[80px]  flex"
       >
         {" "}
         <motion.div
