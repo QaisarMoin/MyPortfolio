@@ -36,8 +36,9 @@ const Info = () => {
 
       {/* Main Body Start */}
       <div
-        className="min-w-[1200px] max-w-[1200px] flex
-       min-h-screen mt-1 "
+        className="
+        lg:min-w-[1200px] lg:max-w-[1200px]
+         flex min-h-screen mt-1 "
       >
         {/* Main Body Container 1 Left Side  */}
         <div className="max-w-[50%] flex items-center flex-col ">

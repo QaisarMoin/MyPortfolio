@@ -3,10 +3,20 @@ import { MdArrowOutward } from "react-icons/md";
 import Info from "../Pages/Information";
 import Page1 from "../Pages/Home";
 import { Link } from "react-router-dom";
+import font10 from "../assets/fonts/font10.woff2";
+import { useEffect } from "react";
 
 const Header = () => {
   const [show, setShow] = useState(false);
   console.log(show);
+
+  const handleClick = () => {
+    document
+      .getElementById("icon_click")
+      .addEventListener("click", function () {
+        document.getElementById("icon_click");
+      });
+  };
 
   return (
     <div className="relative min-w-[100vw] ">
@@ -89,18 +99,33 @@ const Header = () => {
         <div
           className={`w-[50px] h-[50px] rounded-full flex justify-center
            items-center bg-[#1a1a1a] ml-auto mr-2 ${
-             show ? "Header_small_device_dropdown" : "text-red-400"
-           } text-2xl font-[font4] Header_small_device_inside
-          Header_small_device relative right-0 border`}
-          onClick={() => setShow(!show)}
+             show ? "Header_small_device_dropdown" : "text-white"
+           } text-2xl Header_small_device_inside
+          Header_small_device relative right-0 border `}
+          id="icon_click"
+          onClick={() => (setShow(!show), handleClick())}
         >
-          @
+          <div className=" icon_click mb-1">@</div>
           <div
             className={` ${
               show ? "block" : "hidden"
-            } w-80 h-80  absolute top-12 qaisar  right-6`}
+            } absolute top-12 qaisar1 right-6 flex justify-center p-2 
+            rounded-xl items-center mt-2 border-red-500 border`}
           >
-            vfgd
+            <div className={`w-full h-full flex flex-col text-lg `}>
+              <a
+                href="https://www.linkedin.com/feed/"
+                className=" qaisar1 w-full rounded-full px-2 py-1"
+              >
+                Linkedin
+              </a>
+              <a
+                href="https://www.linkedin.com/feed/"
+                className="mt-4 qaisar1 w-full rounded-full px-2 py-1"
+              >
+                Resume
+              </a>
+            </div>
           </div>
         </div>
       </div>

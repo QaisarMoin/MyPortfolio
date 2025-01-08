@@ -31,6 +31,7 @@
 }
 .makeItLarge:hover {
   width: 250px;
+  box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.278);
 }
 
 .Header_small_device {
@@ -48,9 +49,10 @@
 }
 
 .Header_small_device_dropdown {
-  transition: all 0.5s ease-in-out;
+  /* transition: all 0.5s ease-in-out; */
   /* position: relative; */
   border: 2px solid green;
+  color: white;
 }
 
 /* .Header_small_device_dropdown::after {
@@ -66,16 +68,26 @@
 } */
 
 .qaisar {
-  --r: 40px; /* radius */
+  -webkit-backdrop-filter: blur(24.6px);
+  backdrop-filter: blur(24.6px);
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+}
 
-  width: 300px;
-  aspect-ratio: 1.5;
-  background: #519548;
-  border-radius: var(--r) 0 / calc(2 * var(--r)) 0;
-  padding-block: var(--r);
-  --_m: #0000 100%, #000 calc(100% + 1px);
-  mask: conic-gradient(#000 0 0) content-box,
-    radial-gradient(var(--r) at 0 0, var(--_m)) 100% 0 no-repeat,
-    radial-gradient(var(--r) at 0 0, var(--_m)) 100% 0 no-repeat;
-  mask-size: var(--r) var(--r);
+.qaisar1 {
+  background: rgba(79, 36, 36, 0.628);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(35px);
+  border: 1px solid rgba(255, 255, 255, 0.321);
+}
+
+.icon_click {
 }
