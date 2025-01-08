@@ -8,6 +8,7 @@ import CardsPage from "./Pages/CardsPage";
 import Marquees from "./Pages/Marquees";
 import Information from "./Pages/Information";
 import ProjectDetails from "./Pages/ProjectDetails";
+import Footer from "./Components/Footer/Footer";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
           <Home />,
           //  <Marquees />,
           <CardsPage />,
-          <ProjectDetails />,
+          // <ProjectDetails />,
         ],
       },
       {

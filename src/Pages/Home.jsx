@@ -46,7 +46,7 @@ const Page1 = () => {
       onMouseMove={(e) => movingMouse(e)}
       className="h-fit overflow-hidden w-screen md:mt-10 md:py-6 md:px-0 px-20 mt-20
         min-w-[400px] bg-[#000000] flex justify-center items-center relative 
-         md:gap-0 md:min-w-[100vw] "
+         md:gap-0 md:min-w-[100vw]"
     >
       <div
         className="md:max-h-[800px] md:min-h-[500px] md:max-w-[600px] md:min-w-[400px]

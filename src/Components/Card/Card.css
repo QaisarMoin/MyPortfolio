@@ -7,28 +7,15 @@
 .Card_hoverAnimation:hover {
   top: 40px;
 }
+
 .CardImage_hoverAnimation {
   transition: all 0.3s ease-in-out;
   z-index: 0px;
 }
 
-/* .CardImage_hoverAnimation:hover {
-  box-shadow: 0px -200px 400px 20px #1f4f73;
-  z-index: -100px;
-} */
-
 .glowText_card {
   text-shadow: 0 0 0px #ffffff, 0 0 0px #ffffff, 0 0 12px #ffffff;
 }
-
-/* .glow_card {
-  box-shadow: 0 0 0px #8b90a5, 0 0 0px #8b90a5, 0 0 30px #8b90a5;
-  transition: all 0.3s ease-in-out;
-}
-
-.glow_card:hover {
-  box-shadow: 0 0 0px #1f4f73, 0 0 0px #1f4f73, 0 0 50px #1f4f73;
-} */
 
 .middle_div {
   background: rgb(32, 32, 32);
@@ -37,7 +24,7 @@
     rgba(32, 32, 32, 1) 0%,
     rgba(20, 20, 20, 1) 100%
   );
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,11 +33,69 @@
 }
 
 .middle_div:hover {
-  background: #0091ff;
-  background: linear-gradient(180deg, #9b9fac60 0%, rgba(31, 79, 115, 0) 100%);
+  background: radial-gradient(#141414, #3b076c, #141414);
+  /* background: radial-gradient(#141414, #076c4c, #141414); */
+  /* background: radial-gradient(#141414, #6c074a, #141414); */
+  /* background: radial-gradient(#141414, #074a6c, #141414); */
+  background-position: top 10%;
 }
 
 .middle_div_Mobile {
-  background: #0091ff;
-  background: linear-gradient(180deg, #9b9fac60 0%, rgba(31, 79, 115, 0) 100%);
+  background: radial-gradient(#141414, #3b076c, #141414);
+  background-position: top 10%;
+}
+
+.meer {
+  position: relative;
+  background-color: #1e1e1e;
+  overflow: hidden;
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  border-top: 0.2px solid rgba(255, 255, 255, 0.18);
+}
+
+.meer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0)
+  );
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.inner_div {
+  position: relative;
+  background-color: #1e1e1e;
+  overflow: hidden;
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  border-top: 0.2px solid rgba(255, 255, 255, 0.18);
+}
+
+.inner_div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 11%;
+  width: 80%;
+  align-self: center;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.831),
+    rgba(255, 255, 255, 0)
+  );
+  border-radius: 4px;
+  pointer-events: none;
 }

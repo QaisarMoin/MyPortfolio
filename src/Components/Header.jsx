@@ -19,7 +19,7 @@ const Header = () => {
   };
 
   return (
-    <div className="relative min-w-[100vw] ">
+    <div className="relative min-w-[100vw]  ">
       {/* ---------------------------------------------------------- */}
       {/* Header for large md and lg devices  */}
       {/* ---------------------------------------------------------- */}

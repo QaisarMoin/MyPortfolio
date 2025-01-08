@@ -67,7 +67,7 @@ const Page2 = () => {
     <div
       id="page2-in"
       className="text-white py-10 relative
-     bg-[#000] text-center  "
+     bg-[#000] text-center px-5 "
     >
       <div
         className="flex items-center
