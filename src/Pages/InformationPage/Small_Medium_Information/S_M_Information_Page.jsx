@@ -1,11 +1,6 @@
 import React from "react";
-import testing from "../assets/images/testing2.jpg";
-import image from "../assets/images/img12.jpeg";
-import LongCard from "../Components/Card/LongCard";
-import font11 from "../assets/fonts/font11.woff2";
-import "./Information.css";
 
-const Info = () => {
+const S_M_Information_Page = () => {
   return (
     <div
       className=" min-w-[100vw] relative text-white 
@@ -120,4 +115,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export default _;

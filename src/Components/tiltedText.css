@@ -83,11 +83,8 @@
 }
 
 .qaisar1 {
-  background: rgba(79, 36, 36, 0.628);
+  background: rgba(214, 214, 214, 0.155);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(35px);
   border: 1px solid rgba(255, 255, 255, 0.321);
-}
-
-.icon_click {
 }

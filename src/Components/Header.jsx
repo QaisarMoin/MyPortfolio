@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
-import Info from "../Pages/Information";
-import Page1 from "../Pages/Home";
+import Info from "../Pages/InformationPage/Information_bigDevices";
+import Page1 from "../Pages/Home/Home";
 import { Link } from "react-router-dom";
 import font10 from "../assets/fonts/font10.woff2";
 import { useEffect } from "react";
@@ -19,12 +19,12 @@ const Header = () => {
   };
 
   return (
-    <div className="relative min-w-[100vw]  ">
+    <div className="relative min-w-[100vw] ">
       {/* ---------------------------------------------------------- */}
       {/* Header for large md and lg devices  */}
       {/* ---------------------------------------------------------- */}
       <div
-        className="fixed top-5 z-10  px-10 py-5 bg-transparent
+        className="fixed top-5 z-10  px-10 py-5 bg-transparent border 
        min-w-[100vw] md:flex justify-between items-center text-white hidden "
       >
         {/* Left side of Header */}
@@ -87,12 +87,19 @@ const Header = () => {
           className=" w-[170px] p-1 rounded-full ml-2 
         flex justify-between  Header_small_device text-white"
         >
-          <p className="py-2 px-[20px] border Header_small_device_inside rounded-full">
+          <Link
+            to={"/"}
+            className="py-2 px-[20px] border Header_small_device_inside rounded-full"
+          >
             Work
-          </p>
-          <p className="py-2 px-[20px] border  Header_small_device_inside rounded-full">
+          </Link>
+
+          <Link
+            to={"/info"}
+            className="py-2 px-[20px] border  Header_small_device_inside rounded-full"
+          >
             Info
-          </p>
+          </Link>
         </div>
 
         {/* Right Circle */}

@@ -1,10 +1,10 @@
 import React from "react";
 import "./projectDetails.css";
-import EcommerceBannerFinal from "../assets/images/EcommerceBannerFinal.png";
-import font10 from "../assets/fonts/font10.woff2";
-import ecom1 from "../assets/images/ecom1.png";
-import ecom2 from "../assets/images/ecom2.jpg";
-import ecom3 from "../assets/images/ecom3.png";
+import EcommerceBannerFinal from "../../assets/images/EcommerceBannerFinal.png";
+import font10 from "../../assets/fonts/font10.woff2";
+import ecom1 from "../../assets/images/ecom1.png";
+import ecom2 from "../../assets/images/ecom2.jpg";
+import ecom3 from "../../assets/images/ecom3.png";
 
 const ProjectDetails = () => {
   return (

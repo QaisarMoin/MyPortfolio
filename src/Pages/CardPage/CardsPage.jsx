@@ -1,11 +1,10 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React from "react";
-import "./sample.css";
+import "../sample.css";
 import { ScrollTrigger } from "gsap/all";
-import Card from "../Components/Card/Card";
-import eco from "../assets/images/eco.png";
-import { useEffect } from "react";
+import Card from "../../Components/Card/Card";
+import eco from "../../assets/images/eco.png";
 
 const Page2 = () => {
   gsap.registerPlugin(ScrollTrigger);

@@ -1,9 +1,9 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useRef, useState } from "react";
-import TiltText from "../Components/TiltText";
-import "./sample.css";
-import selfi from "../assets/images/img12.jpeg";
+import TiltText from "../../Components/TiltText";
+import "../sample.css";
+import selfi from "../../assets/images/img12.jpeg";
 
 const Page1 = () => {
   const [xVal, setXVal] = useState(0);
