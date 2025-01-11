@@ -20,7 +20,8 @@ function App() {
   // }, []);
 
   return (
-    <div className="absolute min-w-[100vw] min-h-[100vh] overflow-hidden">
+    <div className="absolute min-w-[100vw] min-h-[100vh]  overflow-hidden">
+      {/* bg-gradient-to-b from-[#3333339b] to-[#000000] */}
       <Header />
       <Outlet />
       <Footer />

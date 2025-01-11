@@ -33,7 +33,7 @@ const Footer = () => {
           {/* Top-Right div */}
           <div className=" w-fit h-fit flex flex-col ">
             {/* Heading */}
-            <h1 className="text-[#818181] mb-4 text-xs">Main</h1>
+            <h1 className="text-[#818181] mb-4 text-xs">Contact</h1>
 
             <Link to={"/"} className="mb-4 font-semibold flex">
               Linkedin <MdArrowOutward />

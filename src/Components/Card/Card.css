@@ -33,11 +33,43 @@
 }
 
 .middle_div:hover {
-  background: radial-gradient(#141414, #3b076c, #141414);
+  /* background: radial-gradient(#141414, #3b076c, #141414); */
   /* background: radial-gradient(#141414, #076c4c, #141414); */
   /* background: radial-gradient(#141414, #6c074a, #141414); */
   /* background: radial-gradient(#141414, #074a6c, #141414); */
   background-position: top 10%;
+}
+
+.middle_div_purple_shadow {
+  box-shadow: 0px 0px 60px 0px #141414, 0px 0px 60px 0px #3b076c,
+    0px 0px 60px 0px #141414;
+}
+.middle_div_purple_bg:hover {
+  background: radial-gradient(#141414, #3b076c, #141414);
+}
+
+.middle_div_green_shadow {
+  box-shadow: 0px 0px 60px 0px #141414, 0px 0px 60px 0px #076c4c,
+    0px 0px 60px 0px #141414;
+}
+.middle_div_green_bg:hover {
+  background: radial-gradient(#141414, #076c4c, #141414);
+}
+
+.middle_div_pink_shadow {
+  box-shadow: 0px 0px 60px 0px #141414, 0px 0px 60px 0px #6c074a,
+    0px 0px 60px 0px #141414;
+}
+.middle_div_pink_bg:hover {
+  background: radial-gradient(#141414, #6c074a, #141414);
+}
+
+.middle_div_blue_shadow {
+  box-shadow: 0px 0px 60px 0px #141414, 0px 0px 60px 0px #074a6c,
+    0px 0px 60px 0px #141414;
+}
+.middle_div_blue_bg:hover {
+  background: radial-gradient(#141414, #074a6c, #141414);
 }
 
 .middle_div_Mobile {
@@ -98,4 +130,8 @@
   );
   border-radius: 4px;
   pointer-events: none;
+}
+
+.purple_shadow {
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }

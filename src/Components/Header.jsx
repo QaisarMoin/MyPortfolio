@@ -24,7 +24,7 @@ const Header = () => {
       {/* Header for large md and lg devices  */}
       {/* ---------------------------------------------------------- */}
       <div
-        className="fixed top-5 z-10  px-10 py-5 bg-transparent border 
+        className="fixed top-5 z-10  px-10 py-5 bg-transparent 
        min-w-[100vw] md:flex justify-between items-center text-white hidden "
       >
         {/* Left side of Header */}

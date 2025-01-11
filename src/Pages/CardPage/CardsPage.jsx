@@ -5,6 +5,7 @@ import "../sample.css";
 import { ScrollTrigger } from "gsap/all";
 import Card from "../../Components/Card/Card";
 import eco from "../../assets/images/eco.png";
+import "./CardPage.css";
 
 const Page2 = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -76,21 +77,23 @@ const Page2 = () => {
           path={eco}
           name="E-Commerce"
           description="A Seamless MERN Stack E-commerce Experience!"
-          animation="slideFrom_Left"
+          bg="middle_div_blue_bg"
+          className="middle_div_blue_shadow"
         />
 
         <Card
           path={eco}
           name="E-Commerce"
           description="A Seamless MERN Stack E-commerce Experience!"
-          animation="rotate"
+          bg="middle_div_green_bg"
+          className="middle_div_green_shadow"
         />
         <Card
           path={eco}
           name="E-Commerce"
           description="A Seamless MERN Stack E-commerce Experience!"
-          animation="slideFrom_Right"
-          className=" "
+          bg="middle_div_pink_bg"
+          className="middle_div_pink_shadow"
         />
       </div>
     </div>

@@ -10,13 +10,12 @@ const ProjectDetails = () => {
   return (
     <div
       className="max-w-[100vw] lg:w-[1500px]
-       relative pt-28 flex flex-col items-center 
+       relative pt-16 flex flex-col items-center 
        justify-center overflow-hidden md:max-w-[100vw] md:min-w-[640px] min-w-[400px]"
     >
       <div
         className=" max-w-[100vw] lg:w-[1500px]
-       relative pt-28  md:px-32 bg-gradient-to-b from-[#ffffff1a]
-     to-[#000000]  text-white flex flex-col items-center 
+       relative pt-28  md:px-32   text-white flex flex-col items-center 
        justify-center overflow-hidden md:max-w-[100%] 
         md:min-w-[640px] min-w-[400px] "
       >
