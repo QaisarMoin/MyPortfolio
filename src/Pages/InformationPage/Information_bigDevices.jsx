@@ -1,6 +1,8 @@
 import React from "react";
 import testing from "../../assets/images/testing2.jpg";
-import image from "../../assets/images/img12.jpeg";
+import image1 from "../../assets/images/pic1.jpeg";
+import image2 from "../../assets/images/pic2.jpeg";
+import image3 from "../../assets/images/pic3.jpeg";
 import LongCard from "../../Components/Card/LongCard";
 import font11 from "../../assets/fonts/font11.woff2";
 import "./Information.css";
@@ -8,57 +10,64 @@ import "./Information.css";
 const Info = () => {
   return (
     <div
-      className="relative text-white justify-center min-w-[420px]
+      className="relative text-[#424245] justify-center w-[100vw]  
       mt-40 mb-10 overflow-hidden flex items-center flex-col max-w-[100vw] pb-10  "
     >
       {/* <------------------------- Banner Starting */}
       <div
-        className=" h-fit   text-nowrap 
+        className="text-nowrap 
         overflow-hidden color-normal
 
-         min-w-[410px] w-screen max-w-[100vw] px-4
-          md:justify-center md:items-center
-        md:min-w-[100vw] md:max-w-[100vw] md:px-4
+          w-[100%] px-2 py-4
 
-        lg:w-[1024px] lg:min-w-[1024px] lg:px-10 "
+        
+        md:min-w-[100vw] md:max-w-[100vw] md:px-4 md:justify-center md:items-center
+
+        lg:w-[1024px] lg:min-w-[1024px] lg:px-10 leading-tight"
       >
         <span
-          className="font-[font2]  color-normal
-          text-[25px]
-          md:text-[28.5px] 
+          className="font-[font2]  color-normal -mb-10
+          text-[7vw] w-[90%]  leading-tight
+          md:text-[5vw]  
         lg:text-[35.5px]"
         >
-          I specialize in building{" "}
+          {/* I specialize in building{" "} */}
+          <span className="text-[#f56300] text-[60px] ">I </span>
+          build{" "}
           <span
             className="font-[font1] 
-            text-5xl
-          md:text-7xl
+            text-[12vw]
+          md:text-[10vw]
           lg:text-8xl 
-           gradient-color glow "
+           gradient-color glow mr-2"
           >
-            dynamic web
+            dynamic websites
           </span>
+          and
         </span>
 
         <br />
         <span
-          className="font-[font2] 
-          text-[25px] md:text-nowrap text-wrap md:mt-0  
-        md:text-[28.5px] 
+          className="font-[font2] md:leading-tight  leading-[50px]
+          text-[7vw] md:text-wrap text-wrap md:mt-0  
+        md:text-[5vw] 
          lg:min-w-[100vw] 
          lg:text-[35.5px]"
         >
           solutions that{" "}
           <span
             className="font-[font1] 
-            text-5xl
-          md:text-7xl
+            text-[12vw]
+          md:text-[10vw]
           lg:text-8xl
            gradient-color"
           >
             empower people
           </span>{" "}
-          <span className="md:ml-1 ml-1">to achieve their goals.</span>
+          <span className="md:ml-1 ml-1">
+            to achieve their goals
+            <span className="text-[#f56300] text-[60px] ">.</span>
+          </span>
         </span>
       </div>
       {/* Banner end Here -----------------------------> */}
@@ -66,9 +75,9 @@ const Info = () => {
       {/* Main Body Start */}
 
       <div
-        className="w-screen 
+        className="w-full max-h-fit
 
-        min-w-[410px] max-w-[100vw] px-4
+        min-w-[410px] max-w-[100vw] px-10
 
          md:min-w-[100vw] md:max-w-[100vw] md:px-4
 
@@ -86,32 +95,40 @@ const Info = () => {
           >
             {/* Card 1 */}
             <LongCard
-              imageAddress={testing}
-              className="middle_div_green_shadow"
+              imageAddress={image1}
+              className="middle_div_blue_shadow"
             />
 
             <p
-              className="mt-5 flex flex-col justify-center px-9
-             items-center "
+              className="mt-10 flex flex-col justify-center  w-fit
+             items-center px-1  "
             >
-              <span className={`font-bold text-xl font-[${font11}]`}>
-                2) My background in Architecture.
+              <span className={`font-bold text-xl font-[font7]`}>
+                My Journey in Technology
               </span>
               <br />
 
               <span
-                className="font-[font4] text-[#a5a0a0] text-left text-[17px]
-                px-4 "
+                className="font-[font6] text-[#fff] text-left text-[17px]
+                px-4 bg-[#424245] rounded-xl py-2"
               >
-                In June of 2022, I graduated from architecture school at the{" "}
-                University of Toronto. There, I became obsessed with
-                architectural visualization.
+                I am currently pursuing my BTech in Information Technology at{" "}
+                <span className="font-bold text-[#f56300]">
+                  Jabalpur Engineering College
+                </span>{" "}
+                - a prestigious government institution shaping my technical
+                foundation.
               </span>
               <br />
-              <span className="font-[font4] text-[#a5a0a0] text-[17px] px-4 ">
-                I was deeply fascinated in the concepts of modularity and
-                adaptability — how our built environment could organically
-                evolve in conjuction with humanity.
+              <span
+                className="font-[font6] text-[#fff] text-[17px] px-4 bg-[#424245]
+               rounded-xl py-2"
+              >
+                My journey began at{" "}
+                <span className="font-bold text-[#f56300]">
+                  Stemfield International School
+                </span>{" "}
+                , sparking my curiosity for technology and problem-solving.
               </span>
             </p>
           </div>
@@ -122,22 +139,21 @@ const Info = () => {
           {/* Top Right Div */}
           <div
             className="md:w-[50%] flex md:flex-col flex-col-reverse
-             justify-end 
-          items-center min-w-[300px]  "
+             justify-end items-center min-w-[300px]  "
           >
             {/* Card 2 */}
 
             <p
-              className={`font-[${font11}] text-[#ffffff]
-             text-[17px] md:mt-0 mt-10 md:px-10`}
+              className={`font-[font7] text-[#424245] font-bold
+             text-xl md:mt-0 mt-10 md:px-10 text-center justify-center`}
             >
-              1) This is my story — alongside some flicks from my{" "}
-              <br className="md:hidden lg:block" /> recent trip to Japan.
+              Here’s my journey — weaving code, creativity, and{" "}
+              <br className="md:hidden lg:block hidden" /> impactful stories.
             </p>
 
             <LongCard
-              imageAddress={testing}
-              className="middle_div_purple_shadow"
+              imageAddress={image2}
+              className="middle_div_blue_shadow"
             />
           </div>
         </div>
@@ -149,7 +165,7 @@ const Info = () => {
 
         {/* 2) Bottom Div of main Body */}
         <div
-          className="w-full flex  md:flex-row flex-col
+          className="w-full flex  md:flex-row flex-col-reverse
               text-wrap "
         >
           {/* Top left div */}
@@ -160,31 +176,30 @@ const Info = () => {
             {/* Card 3 */}
             <LongCard
               imageAddress={testing}
-              className="middle_div_pink_shadow"
+              className="middle_div_blue_shadow"
             />
 
             <p
-              className="mt-5 flex flex-col justify-center px-9
-             items-center "
+              className="mt-10 flex flex-col justify-center md:px-9
+             items-center px-1"
             >
-              <span className={`font-bold text-xl font-[${font11}]`}>
-                3) My background in Architecture.
+              <span className={`font-bold text-xl font-[font7]`}>
+                My Life Beyond Technology
               </span>
               <br />
 
               <span
-                className="font-[font4] text-[#a5a0a0] text-left text-[17px]
-                px-4 "
+                className="font-[font6] text-[#fff] text-left text-[17px]
+                px-4 bg-[#424245] rounded-xl py-2"
               >
-                In June of 2022, I graduated from architecture school at the{" "}
-                University of Toronto. There, I became obsessed with
-                architectural visualization.
-              </span>
-              <br />
-              <span className="font-[font4] text-[#a5a0a0] text-[17px] px-4 ">
-                I was deeply fascinated in the concepts of modularity and
-                adaptability — how our built environment could organically
-                evolve in conjuction with humanity.
+                In my spare time, I enjoy hitting the{" "}
+                <span className="font-bold text-[#f56300]">
+                  gym, playing video games, and challenging myself with chess
+                </span>{" "}
+                - activities that keep me balanced, focused, and sharp, while{" "}
+                <span className="font-bold text-[#f56300]">
+                  enhancing my strategic thinking and creativity.
+                </span>
               </span>
             </p>
           </div>
@@ -201,32 +216,41 @@ const Info = () => {
             {/* Card 4 */}
 
             <p
-              className="mt-5 flex flex-col justify-center px-9
-             items-center "
+              className="mt-10 flex flex-col justify-center md:px-9
+             items-center px-1 "
             >
-              <span className={`font-bold text-xl font-[${font11}]`}>
-                4) My background in Architecture.
+              <span className={`font-bold text-xl font-[font7]`}>
+                My Passion for Innovation
               </span>
               <br />
 
               <span
-                className="font-[font4] text-[#a5a0a0] text-left text-[17px]
-                px-4 "
+                className="font-[font6] text-[#fff] text-left text-[17px]
+                px-4 bg-[#424245] rounded-xl py-2"
               >
-                In June of 2022, I graduated from architecture school at the{" "}
-                University of Toronto. There, I became obsessed with
-                architectural visualization.
+                Over the years, I’ve developed a passion for{" "}
+                <span className="font-bold text-[#f56300]">
+                  building innovative
+                </span>{" "}
+                and{" "}
+                <span className="font-bold text-[#f56300]">
+                  adaptable solutions
+                </span>{" "}
+                that bridge real-world challenges with the transformative power
+                of technology.
               </span>
               <br />
-              <span className="font-[font4] text-[#a5a0a0] text-[17px] px-4 ">
-                I was deeply fascinated in the concepts of modularity and
-                adaptability — how our built environment could organically
-                evolve in conjuction with humanity.
+              <span className="font-[font6] text-[#fff] text-[17px] px-4 bg-[#424245] rounded-xl py-2 ">
+                Whether creating user-friendly interfaces or{" "}
+                <span className="font-bold text-[#f56300]">
+                  working with AI
+                </span>{" "}
+                - I strive to bring impactful ideas to life.
               </span>
             </p>
 
             <LongCard
-              imageAddress={testing}
+              imageAddress={image3}
               className="middle_div_blue_shadow"
             />
           </div>

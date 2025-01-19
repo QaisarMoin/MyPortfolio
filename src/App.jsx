@@ -1,27 +1,32 @@
-import "./App.css";
-import Header from "../src/Components/Header.jsx";
-import LocomotiveScroll from "locomotive-scroll";
+import React, { useEffect } from "react";
 import { Outlet } from "react-router-dom";
-import { useEffect } from "react";
+import LocomotiveScroll from "locomotive-scroll";
+import "locomotive-scroll/dist/locomotive-scroll.css"; // Import LocomotiveScroll styles
+import Header from "./Components/Header";
 import Footer from "./Components/Footer/Footer";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
-  const locomotiveScroll = new LocomotiveScroll();
+  useEffect(() => {
+    // Initialize LocomotiveScroll
+    const scrollContainer = document.querySelector("[data-scroll-container]");
+    const locomotiveScroll = new LocomotiveScroll({
+      el: scrollContainer,
+      smooth: true, // Enables smooth scrolling
+    });
 
-  // useEffect(() => {
-  //   const cursor = document.querySelector(".cursor");
-  //   document.addEventListener(
-  //     "mousemove",
-  //     (e) => (
-  //       (cursor.style.left = e.pageX + "px"),
-  //       (cursor.style.top = e.pageY + "px")
-  //     )
-  //   );
-  // }, []);
+    // Clean up LocomotiveScroll on component unmount
+    return () => {
+      locomotiveScroll.destroy();
+    };
+  }, []);
 
   return (
-    <div className="absolute min-w-[100vw] min-h-[100vh]  overflow-hidden">
-      {/* bg-gradient-to-b from-[#3333339b] to-[#000000] */}
+    <div
+      data-scroll-container
+      className="absolute min-w-[100vw] min-h-[100vh] overflow-hidden"
+    >
+      <ScrollToTop />
       <Header />
       <Outlet />
       <Footer />

@@ -1,45 +1,24 @@
-.gradient-border {
-  min-width: 50%;
-  background-color: transparent;
-  min-height: 100px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
-
 .Portfolioicon {
-  min-width: 50%;
   background-color: transparent;
   min-height: 100px;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .card-insight-box {
-  /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #000000);
-  -webkit-backdrop-filter: blur(15px);
-  backdrop-filter: blur(15px); */
-  /* padding: 50px 50px; */
-  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
-  /* width: 100vw; */
-  /* position: relative; */
   color: #ffffff;
-  border-radius: 12px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  border-top: 5px solid rgba(0, 179, 255, 0.708);
+  border-top: 5px solid #0066cc;
 }
 
 .dot {
-  box-shadow: 0 0 20px #ff375f, 0 0 10px #ff375f;
+  box-shadow: 0 0 20px #f56300, 0 0 10px #f56300;
 }
 
 .card-insight-box p {
@@ -50,7 +29,7 @@
 
 .card-insight-icon {
   display: inline-block;
-  background-color: #34a4b86b;
+  background-color: #0066cc;
   color: #101010;
   border-radius: 50%;
   width: 40px;
@@ -61,5 +40,14 @@
   margin-bottom: 15px;
   font-size: 1.2rem;
   font-weight: bold;
-  box-shadow: 0 0 40px rgba(0, 179, 255, 0.708);
+  box-shadow: 0 0 40px #0066cc;
+}
+
+.image-shadow1 {
+  box-shadow: 0px 0px 0px 0px #141414, 0px 0px 10px 0px #484747,
+    0px 0px 0px 0px #141414;
+}
+
+.title-shadow {
+  box-shadow: 0px 0px 50px 100px #e5e5e5 inset;
 }

@@ -7,22 +7,29 @@ import Home from "./Pages/Home/Home";
 import CardsPage from "./Pages/CardPage/CardsPage";
 import Marquees from "./Pages/MarqueePage/Marquees";
 import Information from "./Pages/InformationPage/Information_bigDevices";
-import ProjectDetails from "./Pages/ProjectDetailsPage/ProjectDetails";
-import Footer from "./Components/Footer/Footer";
+import SkillsPage from "./Pages/SkillsPage/SkillsPage";
+import ProjectDetails_bloging from "./Pages/ProjectDetailsPage/ProjectDetails_bloging";
+import ContactUsPage from "./Pages/ContactUsPage/ContactUsPage";
+import ScrollToTop from "./Components/ScrollToTop";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: (
+      <>
+        <App />
+      </>
+    ),
     children: [
       {
         path: "/",
-        element: [
-          <Home />,
-          //  <Marquees />,
-          <CardsPage />,
-          // <ProjectDetails />,
-        ],
+        element: (
+          <>
+            <Home />,
+            <SkillsPage />,
+            <CardsPage />
+          </>
+        ),
       },
       {
         path: "info",
@@ -30,7 +37,11 @@ const router = createBrowserRouter([
       },
       {
         path: "project-details",
-        element: <ProjectDetails />,
+        element: <ProjectDetails_bloging />,
+      },
+      {
+        path: "contact-us",
+        element: <ContactUsPage />,
       },
     ],
   },

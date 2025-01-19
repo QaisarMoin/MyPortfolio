@@ -1,25 +1,12 @@
 import React, { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
-import Info from "../Pages/InformationPage/Information_bigDevices";
-import Page1 from "../Pages/Home/Home";
 import { Link } from "react-router-dom";
-import font10 from "../assets/fonts/font10.woff2";
-import { useEffect } from "react";
 
 const Header = () => {
   const [show, setShow] = useState(false);
-  console.log(show);
-
-  const handleClick = () => {
-    document
-      .getElementById("icon_click")
-      .addEventListener("click", function () {
-        document.getElementById("icon_click");
-      });
-  };
 
   return (
-    <div className="relative min-w-[100vw] ">
+    <div className="relative max-w-[100vw]  ">
       {/* ---------------------------------------------------------- */}
       {/* Header for large md and lg devices  */}
       {/* ---------------------------------------------------------- */}
@@ -28,12 +15,13 @@ const Header = () => {
        min-w-[100vw] md:flex justify-between items-center text-white hidden "
       >
         {/* Left side of Header */}
-        <div
-          className=" min-w-1/3 flex relative
-         items-center px-4 glowText"
+        <Link
+          to={"/contact-us"}
+          className=" Header_wwe1 border-[#8b90a5] border-[1px] flex 
+            items-center p-2 justify-center rounded-full font-[font5]"
         >
-          Linkedin <MdArrowOutward />
-        </div>
+          ContactUs <MdArrowOutward />
+        </Link>
 
         {/* Middel part of Header */}
         <div
@@ -48,13 +36,14 @@ const Header = () => {
           >
             Work
           </Link>
+
           <Link
             to="/info"
             className="min-w-[50px] h-full my-3 glowTextMiddel
-           max-w-fit rounded-full
+           max-w-fit rounded-full text-center
          hover:text-yellow-100 "
           >
-            InFo
+            About
           </Link>
         </div>
 
@@ -63,13 +52,19 @@ const Header = () => {
           className=" space-x-7 min-px-4 min-w-1/3
        flex justify-end"
         >
-          <button className="flex items-center glowText">
+          <button
+            className="Header_wwe1 border-[#8b90a5] border-[1px] flex 
+            items-center p-2 justify-center rounded-full font-[font5] "
+          >
             <a href="https://www.linkedin.com/in/qaisar-moin-884918253/">
               Linkedin{" "}
             </a>{" "}
             <MdArrowOutward />
           </button>
-          <button className="flex items-center glowText">
+          <button
+            className="Header_wwe1 border-[#8b90a5] border-[1px] flex 
+            items-center p-2 justify-center rounded-full font-[font5]"
+          >
             Resume <MdArrowOutward />
           </button>
         </div>
@@ -79,7 +74,7 @@ const Header = () => {
       {/* Header for Small devices  */}
       {/* ---------------------------------------------------------- */}
       <div
-        className="md:hidden flex min-w-[409px] px-4 w-screen py-2
+        className="md:hidden flex  w-screen max-w-[100vw]  px-4 py-2
        top-6 fixed z-20"
       >
         {/* Left Capsule */}
@@ -110,7 +105,7 @@ const Header = () => {
            } text-2xl Header_small_device_inside
           Header_small_device relative right-0 border `}
           id="icon_click"
-          onClick={() => (setShow(!show), handleClick())}
+          onClick={() => setShow(!show)}
         >
           <div className=" icon_click mb-1">@</div>
           <div
@@ -132,6 +127,12 @@ const Header = () => {
               >
                 Resume
               </a>
+              <Link
+                to={"/contact-us"}
+                className="mt-4 qaisar1 w-full rounded-full px-2 py-1"
+              >
+                Contact
+              </Link>
             </div>
           </div>
         </div>

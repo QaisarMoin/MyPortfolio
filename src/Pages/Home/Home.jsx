@@ -3,7 +3,8 @@ import gsap from "gsap";
 import React, { useRef, useState } from "react";
 import TiltText from "../../Components/TiltText";
 import "../sample.css";
-import selfi from "../../assets/images/img12.jpeg";
+import selfi from "../../assets/images/darkbg-photo.png";
+import selfi2 from "../../assets/images/lightbg-photo.png";
 
 const Page1 = () => {
   const [xVal, setXVal] = useState(0);
@@ -44,22 +45,44 @@ const Page1 = () => {
       data-scroll-speed="-.3"
       data-scroll-section
       onMouseMove={(e) => movingMouse(e)}
-      className="h-fit overflow-hidden w-screen md:mt-10 md:py-6 md:px-0 px-20 mt-20
-        min-w-[400px] bg-[#000000] flex justify-center items-center relative 
-         md:gap-0 md:min-w-[100vw]"
+      className="h-fit overflow-hidden w-screen px-10  flex-col-reverse
+        min-w-[320px] justify-center py-20
+
+        lg:min-h-[70vh]
+
+        md:gap-0 md:min-w-[100vw] md:scale-100 scale-[1.1] md:pt-28 md:pb-10
+        md:min-h-[70vh] md:px-0 md:flex-row md:justify-evenly md:py-0
+
+        bg-[#e5e5e5] flex  items-center
+         relative  "
     >
       <div
-        className="md:max-h-[800px] md:min-h-[500px] md:max-w-[600px] md:min-w-[400px]
-       w-[50vw]  md:w-[600px]  flex items-center 
+        className=" w-fit
+
+
+        lg:max-h-[800px] lg:min-h-[500px] lg:max-w-[600px] lg:min-w-[400px]
+
+         md:max-h-[400px] md:min-h-[450px] md:max-w-[600px] md:min-w-[350px] 
+         md:w-[450px]
+          
+           flex items-center justify-center
           "
         id="page1-in"
       >
         <TiltText refrence={tiltRef} />
       </div>
       <img
-        src={selfi}
-        className="md:max-h-[800px] md:mr-[-150px] md:min-h-[500px]
-       w-[50vw] md:max-w-[600px] md:min-w-[400px] min-w-[200px]"
+        src={selfi2}
+        className="min-w-[320px] w-[500px] mt-10
+
+         lg:max-w-[600px] lg:min-w-[600px] lg:min-h-[600px]
+
+         rounded-full md:min-w-[430px] md:max-w-[430px] md:max-h-[430px] 
+         md:min-h-[430px] md:mt-0
+
+         shadow-2xl
+         
+        "
         alt=""
       />
     </div>

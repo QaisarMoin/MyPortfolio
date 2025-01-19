@@ -1,0 +1,36 @@
+.form_shadow {
+  position: relative;
+}
+
+.form_shadow::after {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  right: -1%;
+  bottom: -1%;
+  border-radius: 12px;
+  z-index: -1;
+  background: linear-gradient(#f56300, #424245, #0066cc);
+  box-shadow: 0px 0px 0px 0px #141414, 0px 0px 20px 0px #2b292b,
+    0px 0px 0px 0px #141414;
+}
+.button_bg {
+  position: relative;
+}
+
+.button_bg::after {
+  content: "";
+  position: absolute;
+  width: 115%;
+  height: 115%;
+  right: -2.5%;
+  bottom: -2.5%;
+  z-index: -1;
+  background: linear-gradient(
+    120deg,
+    rgb(238, 112, 112),
+    rgb(180, 255, 180),
+    rgb(134, 134, 244)
+  );
+}

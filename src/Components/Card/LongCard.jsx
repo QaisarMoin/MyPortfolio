@@ -4,7 +4,7 @@ const LongCard = ({ imageAddress, className = "" }) => {
   return (
     <div
       className={`md:max-w-[90%] md:w-[420px] max-h-fit min-h-fit 
-      overflow-hidden w-[100%] hover:scale-105 transition-all duration-300
+      overflow-hidden w-[95%] hover:scale-105 transition-all duration-300
        ease-in-out ${className}
              flex justify-center items-center rounded-3xl object-cover
               mt-24 bg-gradient-to-b from-[#434343] border-[0.2px]`}

@@ -1,5 +1,4 @@
 import React from "react";
-import "./Footer.css";
 import { Link } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
 
@@ -7,12 +6,12 @@ const Footer = () => {
   return (
     <div
       className="
-      text-white min-w-screen mt-36 relative px-9
+      text-white min-w-screen mt-36 relative px-9 bg-black
     py-20 flex md:justify-center justify-start items-center md:px-9"
     >
       <div
-        className="lg:w-[100%] lg:max-w-[1024px]  
-      md:w-[690px] h-fit"
+        className="lg:w-[100%] lg:max-w-[1024px] 
+      md:w-[690px]"
       >
         {/* Top Div */}
         <div className="flex w-full gap-20">

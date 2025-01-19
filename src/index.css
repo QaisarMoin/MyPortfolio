@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 html {
-  /* scroll-behavior: smooth; */
   transition: all 0.5s ease-in-out;
 }
 
@@ -30,4 +29,36 @@ html {
 @font-face {
   font-family: font6;
   src: url(./assets/fonts/font6.woff2);
+}
+@font-face {
+  font-family: font7;
+  src: url(./assets/fonts/font7.woff2);
+}
+@font-face {
+  font-family: font8;
+  src: url(./assets/fonts/font8.woff2);
+}
+@font-face {
+  font-family: font9;
+  src: url(./assets/fonts/font9.woff2);
+}
+@font-face {
+  font-family: font10;
+  src: url(./assets/fonts/font10.woff2);
+}
+@font-face {
+  font-family: font11;
+  src: url(./assets/fonts/font11.woff2);
+}
+@font-face {
+  font-family: font12;
+  src: url(./assets/fonts/font12.woff2);
+}
+@font-face {
+  font-family: font13;
+  src: url(./assets/fonts/Impact.ttf);
+}
+@font-face {
+  font-family: font14;
+  src: url(./assets/fonts/one.ttf);
 }
